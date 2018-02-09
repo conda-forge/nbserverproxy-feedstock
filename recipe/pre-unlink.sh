@@ -1,1 +1,1 @@
-"${PREFIX}/bin/jupyter-nbextension" disable nbserverproxy --py --sys-prefix
+"${PREFIX}/bin/jupyter-serverextension" disable nbserverproxy --py --sys-prefix
