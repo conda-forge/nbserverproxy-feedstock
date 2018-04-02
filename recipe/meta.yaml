@@ -1,8 +1,8 @@
 {% set name = "nbserverproxy" %}
-{% set version = "0.5.1" %}
+{% set version = "0.7" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "61b6fbd2250103f9762a6493478ab7d0f9856ccc080ad961f191e63aabf80220" %}
+{% set hash_value = "db8e6c418904e2c00033205eec7622f0559741c8f966b44570ee0a465d5eec3c" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py2k]
   script: python -m pip install --no-deps --ignore-installed .
 
