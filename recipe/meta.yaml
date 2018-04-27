@@ -1,8 +1,8 @@
 {% set name = "nbserverproxy" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8302caadde8f2be87f027ebf4b9dfbc170538c0aeff00f2d3102af0ac058ff79" %}
+{% set hash_value = "c8afb9502e425bc007e56207fac3f0caed0bf300fc0fcfdc8a174106d513d997" %}
 
 package:
   name: '{{ name|lower }}'
