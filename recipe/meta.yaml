@@ -1,16 +1,12 @@
-{% set name = "nbserverproxy" %}
 {% set version = "0.8.1" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "c8afb9502e425bc007e56207fac3f0caed0bf300fc0fcfdc8a174106d513d997" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: nbserverproxy
+  version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/n/nbserverproxy/nbserverproxy-{{ version }}.tar.gz
+  sha256: c8afb9502e425bc007e56207fac3f0caed0bf300fc0fcfdc8a174106d513d997
 
 build:
   number: 0
