@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: nbserverproxy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nbserverproxy/nbserverproxy-{{ version }}.tar.gz
-  sha256: c2e7c44ce042e1892fd2b2fb75c781080393c84503e68041a9269a5b45291353
+  sha256: f77a51352ac8a664ba005ae8ca8cb2088f07f6c2d8904f6fd7f7f1f2edbcdb9f
 
 build:
   number: 1000
