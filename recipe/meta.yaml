@@ -10,15 +10,15 @@ source:
 
 build:
   number: 1000
-  skip: True  # [py2k]
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - notebook
 
 test:
@@ -27,12 +27,13 @@ test:
 
 about:
   home: https://github.com/jupyterhub/nbserverproxy
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
-#  license_file: LICENSE
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: Jupyter server extension to proxy web services
 
 extra:
   recipe-maintainers:
+    - minrk
     - ocefpaf
     - lsetiawan
