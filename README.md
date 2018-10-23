@@ -3,7 +3,7 @@ About nbserverproxy
 
 Home: https://github.com/jupyterhub/nbserverproxy
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -14,9 +14,8 @@ Summary: Jupyter server extension to proxy web services
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/nbserverproxy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/nbserverproxy-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/nbserverproxy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/nbserverproxy-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/nbserverproxy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/nbserverproxy-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/nbserverproxy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/nbserverproxy-feedstock)
 
 Current release info
 ====================
