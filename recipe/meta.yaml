@@ -5,23 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/nbserverproxy/nbserverproxy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/nbserverproxy/nbserverproxy-{{ version }}.tar.gz
   sha256: 23558fa1efe42fa0a832a4e69eb9743e5b8724d95cc17ce38b5f8ede1d21020f
 
 build:
-  number: 1000
+  number: 1001
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3
+    - python >={{ python_min }}
     - notebook
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - nbserverproxy
 
